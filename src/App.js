@@ -4,7 +4,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
@@ -43,8 +42,7 @@ const sections = [
 function App() {
   const classes = useStyles();
   return (
-    < Router >
-      <CssBaseline />
+    <React.Fragment>
       <Container maxWidth="lg">
 
         <Toolbar className={classes.toolbar}>
@@ -86,7 +84,7 @@ function App() {
           <Route path="/articles" component={Articles} />
         </main>
       </Container>
-    </Router >
+    </React.Fragment>
   );
 }
 
