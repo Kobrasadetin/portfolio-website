@@ -21,7 +21,7 @@ JavaScript, ActionScript and CSS. Main focus of the studies was on 3d modeling, 
 short(ish) movie with a 50 minute playtime. I also made an isometric game engine with Flash.
 
 At this time, I was also studying neural networks. It was the late 00s and early 10s, and Hinton, Krizhevsky and Sutskever
-hadn't yet started the AI renaissance with their paper ImageNet Classification with Deep Convolutional Neural Networks.
+hadn't yet started the AI renaissance with their paper [ImageNet Classification with Deep Convolutional Neural Networks.]
 Programming neural networks was very different from now - there was next to no libraries or even code examples available.
 Trying new ideas was a slow but rewarding process. I also studied genetic algorithms. I believed that they would be the
 key to finding a good training algorithm. In some way I still do. Even Hinton himself has remarked that he is ["deeply suspicious"
@@ -38,15 +38,15 @@ Unity 3d, and in machine learning projects I much like to code in Python.
 I have always been very bad at showcasing the stuff I do, but I hope this website changes that somewhat.
 
 [1]:https://www.axios.com/artificial-intelligence-pioneer-says-we-need-to-start-over-1513305524-f619efbd-9db0-4947-a9b2-7a4c310a28fe.html
-
+[2]:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networ
 `
 
 const DriveApi = {
     getAboutMe: () => ({ markdown: aboutMe }),
     getArticleListing: () => (['article']),
-    getArticle: (article) => ({ markdown: `article by name ${article}` }),
+    getArticle: (article) => ({ markdown: `article by name ${article}`, title: "An article", id: "1" }),
     getProjectListing: () => (['this_website']),
-    getProject: (project) => ({ markdown: `project by name ${project}` }),
+    getProject: (project) => ({ markdown: `project by name ${project}`, title: "This website", id: "1" }),
 }
 
 export default DriveApi

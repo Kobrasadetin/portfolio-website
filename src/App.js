@@ -9,12 +9,12 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
 import Articles from './content/Articles'
+import Projects from './content/Projects'
 import Home from './content/Home'
 
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => {
-  console.log(theme)
   return ({
     toolbar: {
       borderBottom: `1px solid ${theme.palette.divider}`,
@@ -82,6 +82,7 @@ function App() {
         <main>
           <Route exact path="/" component={Home} />
           <Route path="/articles" component={Articles} />
+          <Route path="/projects" component={Projects} />
         </main>
       </Container>
     </React.Fragment>
