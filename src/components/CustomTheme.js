@@ -20,19 +20,19 @@ const theme = createMuiTheme({
         },
         h3: {
             fontWeight: 500,
-            fontSize: 24,
+            fontSize: 22,
         },
         h4: {
             fontWeight: 400,
-            fontSize: 22,
+            fontSize: 20,
         },
         h5: {
             fontWeight: 500,
-            fontSize: 18,
+            fontSize: 16,
         },
         h6: {
             fontWeight: 400,
-            fontSize: 18,
+            fontSize: 16,
         },
     },
 });
